@@ -252,7 +252,6 @@ dev_dependencies:
   go_router_builder: ^4.1.1
   build_runner: any
   build_verify: any
-  yx_scope_linter: ^0.2.0
   custom_lint: ^0.7.3
 
 flutter_icons:
