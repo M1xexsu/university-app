@@ -25,6 +25,9 @@ jobs:
         with:
           channel: stable
 
+      - name: Check outdated dependencies
+        run: flutter pub outdated
+
       - name: Install Dependencies
         run: flutter pub get
 
