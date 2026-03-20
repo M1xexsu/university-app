@@ -28,11 +28,14 @@ jobs:
       - name: Check outdated dependencies
         run: flutter pub outdated
 
+      - name: clean
+        run: flutter clean
+
       - name: Install Dependencies
         run: flutter pub get
 
       - name: Build APK
-        run: flutter build apk --target=lib/main/main_development.dart --release
+        run: flutter build apk --target=lib/main/main_development.dart --release --verbose
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
